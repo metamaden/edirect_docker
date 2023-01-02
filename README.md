@@ -35,3 +35,23 @@ You could also run queries from an interactive session, like so:
 sudo docker run -it edirect bash # run interactive session
 esearch -db gds -query 'GPL13534[ACCN] AND gse[ETYP] AND Homo sapiens[ORGN]' # try a new query
 ```
+
+Either of the above queries should return something like the following:
+```
+<ENTREZ_DIRECT>
+  <Db>gds</Db>
+  <WebEnv>MCID_63b33b4784d8ee4a3124bbff</WebEnv>
+  <QueryKey>1</QueryKey>
+  <Count>1594</Count>
+  <Step>1</Step>
+</ENTREZ_DIRECT>
+```
+
+# Additional resources
+
+* Consult the main tertiary databases ([GEO](https://www.ncbi.nlm.nih.gov/geo/), [SRA](https://www.ncbi.nlm.nih.gov/sra), and [Bioconductor](https://bioconductor.org/packages/release/data/experiment/)) 
+for full metadata, supplemental files, and more.
+
+* [`geoarraydigest`](https://github.com/metamaden/geoarraydigest) : A project to compile and publish GEO array metadata by platform. Also contains helpful information about platforms compiled.
+
+* [`pubomics`](https://github.com/metamaden/pubomics) : A resource for raising awareness of public omics data.
