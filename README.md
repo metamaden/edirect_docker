@@ -12,32 +12,32 @@ source for this Dockerfile is from the ![BioContainers repo](https://github.com/
 ## Clone the main repo with
 
 You can clone the main GitHub repo with the image Dockerfile, using:
-```
+```console
 git clone https://github.com/metamaden/edirect_docker
 ```
 
 ## Build the image locally
 
 Build the docker image from the cloned Dockerfile, setting the `--tag` argument to some informative name:
-```
+```console
 docker build edirect_docker --tag edirect:latest
 ```
 
 ## Try some queries
 
 You can now pass a query to the Docker image in one line like so:
-```
+```console
 docker run -it edirect esearch -db gds -query 'GPL13534[ACCN] AND gse[ETYP] AND Homo sapiens[ORGN]'
 ```
 
 You could also run queries from an interactive session, like so:
-```
+```console
 sudo docker run -it edirect bash # run interactive session
 esearch -db gds -query 'GPL13534[ACCN] AND gse[ETYP] AND Homo sapiens[ORGN]' # try a new query
 ```
 
 Either of the above queries should return something like the following:
-```
+```console
 <ENTREZ_DIRECT>
   <Db>gds</Db>
   <WebEnv>MCID_63b33b4784d8ee4a3124bbff</WebEnv>
