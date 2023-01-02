@@ -5,7 +5,7 @@ An updated edirect docker image
 # Description
 
 An updated Entrez Direct Utilities Dockerfile, currently based on BioContainers v1.2.0_cv2 and running edirect v18.6.20221222. The original 
-source for this Dockerfile is from the ![BioContainers repo](https://github.com/BioContainers/containers/tree/master/entrez-direct/7.50.20171103).
+source for this Dockerfile is from the BioContainers GitHub repo (see Resources, below).
 
 # Tutorial:
 
@@ -47,7 +47,9 @@ Either of the above queries should return something like the following:
 </ENTREZ_DIRECT>
 ```
 
-# Additional resources
+# Resources
+
+* BioContainers: Consult the [Docker](https://hub.docker.com/r/biocontainers/biocontainers) and [GitHub](https://github.com/BioContainers/containers) pages for information about this project and available images.
 
 * Consult the main tertiary databases ([GEO](https://www.ncbi.nlm.nih.gov/geo/), [SRA](https://www.ncbi.nlm.nih.gov/sra), and [Bioconductor](https://bioconductor.org/packages/release/data/experiment/)) 
 for full metadata, supplemental files, and more.
