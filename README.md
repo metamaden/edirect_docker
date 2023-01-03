@@ -51,8 +51,8 @@ Either of the above queries should return something like the following:
 
 * **BioContainers** : Consult the [Docker](https://hub.docker.com/r/biocontainers/biocontainers) and [GitHub](https://github.com/BioContainers/containers) pages for information about this project and available images.
 
-* **Tertiary databases** : Consult the main tertiary databases ([GEO](https://www.ncbi.nlm.nih.gov/geo/), [SRA](https://www.ncbi.nlm.nih.gov/sra), and [Bioconductor](https://bioconductor.org/packages/release/data/experiment/)) 
-for full metadata, supplemental files, and more.
+* **Tertiary databases** : Consult the main tertiary databases for public omics data (e.g. [GEO](https://www.ncbi.nlm.nih.gov/geo/), [SRA](https://www.ncbi.nlm.nih.gov/sra), 
+[Bioconductor](https://bioconductor.org/packages/release/data/experiment/), etc.) for full datasets, metadata, supplemental files, and more.
 
 * [**`geoarraydigest`**](https://github.com/metamaden/geoarraydigest) : A project to compile and publish GEO array metadata by platform. Also contains helpful information about platforms compiled.
 
