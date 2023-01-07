@@ -20,9 +20,8 @@ git clone https://github.com/metamaden/edirect_docker
 
 ## Build the image locally
 
-Docker images are built using `docker build <location>`, which calls the file called `Dockerfile` which should be stored at `<location>`. Two `Dockerfile`s are provided, one
-that uses the Biocontainers environment as a base, and one that uses only the minimal dependencies to be able to run Entrez Utilities. The former has added convenience if
-you are going to run other programs in Biocontainers environments, but the latter is slightly smaller and quicker to install.
+Build a Docker image using `docker build <location>`. This will run an appropriately named file called `Dockerfile` that should be available and readable from the specified 
+ `<location>`. In this repo, two `Dockerfile`s have been provided: one using the Biocontainers environment as its base; and one tusing just the minimal dependencies for Entrez Utilities. The former has added convenience if you're running other Biocontainers images, but the latter is smaller and quicker to install.
 
 Build the Biocontainers-compatible Docker image from the cloned Dockerfile, setting the `--tag` argument to some informative name:
 ```sh
