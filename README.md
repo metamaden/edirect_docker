@@ -12,14 +12,14 @@ either using a Biocontainers-compatible image with the file at `./biocontainers/
 This section describes how to set up new Docker images with the provided `Dockerfiles`, and how to get started with using `edirect` from the images. You will need
 access to a terminal with Docker installed in order to run the `docker` commands below.
 
-## Clone the main repo with
+## Clone the `edirect_docker` repo
 
 You can clone the main GitHub repo with the image Dockerfile, using:
 ```sh
 git clone https://github.com/metamaden/edirect_docker
 ```
 
-## Build the image locally
+## Build Docker images
 
 Build a Docker image using `docker build <location>`. This will run an appropriately named file called `Dockerfile` that should be available and readable from the specified 
  `<location>`. In this repo, two `Dockerfile`s have been provided: one using the Biocontainers environment as its base; and one using just the minimal dependencies for Entrez Utilities. The former has added convenience if you're running other Biocontainers images, but the latter is smaller and quicker to install.
@@ -45,7 +45,7 @@ edirect-minimal         latest    cdea17e223f4   8 minutes ago    136MB
 
 Notice the Biocontainers image is a little over 1Gb, whereas the minimal image is just 136Mb.
 
-## Try some queries
+## Example `edirect` queries
 
 You can now pass a query to the Docker image in one line like so, replacing `< IMAGE_NAME >` with either `"edirect-biocontainers"` or `"edirect-minimal"`:
 ```sh
@@ -83,8 +83,12 @@ ENV ZIP=edirect-< LATEST_VERSION >.tar.gz
 ENV URL=ftp://ftp.ncbi.nlm.nih.gov/entrez/entrezdirect/versions/< LATEST_VERSION >/
 ```
 
+# Works cited
+
+The `Dockerfiles` in this repo are based on the file at [https://github.com/BioContainers/containers/blob/master/entrez-direct/7.50.20171103/Dockerfile](https://github.com/BioContainers/containers/blob/master/entrez-direct/7.50.20171103/Dockerfile).
+
 # Further reading
 
-* [**Biocontainers**](https://biocontainers.pro/) : Project for containerizing bioinformatics software. The [Docker](https://hub.docker.com/r/biocontainers/biocontainers) and [GitHub](https://github.com/BioContainers/containers) pages were consulted for this repo.
+* [**Biocontainers**](https://biocontainers.pro/) : Project for containerizing bioinformatics software. In addition to the main site, also see the project's [Docker](https://hub.docker.com/r/biocontainers/biocontainers) and [GitHub](https://github.com/BioContainers/containers) pages.
 
 * [**Entrez Programming Utilities Help**](https://www.ncbi.nlm.nih.gov/books/NBK25501/) : Web-based book showing how to use all the features in `edirect`.
