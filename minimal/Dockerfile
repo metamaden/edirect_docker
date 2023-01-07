@@ -18,4 +18,4 @@ RUN cd $DST && \
 	tar xzfv $DST/$ZIP -C $DST && \
 	mv $DST/$FOLDER/* /usr/bin/ && \
 	rm -rf $DST/$FOLDER && \
-	export PATH=${PATH}:/usr/bin/edirect
+	export PATH=${PATH}:/usr/bin/$FOLDER
