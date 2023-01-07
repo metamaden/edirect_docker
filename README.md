@@ -9,7 +9,8 @@ either using a Biocontainers-compatible image with the file at `./biocontainers/
 
 # Tutorial:
 
-This section describes how to set up new Docker images with the provided `Dockerfiles`, and how to get started with using `edirect` from the images.
+This section describes how to set up new Docker images with the provided `Dockerfiles`, and how to get started with using `edirect` from the images. You will need
+access to a terminal with Docker installed in order to run the `docker` commands below.
 
 ## Clone the main repo with
 
@@ -21,7 +22,7 @@ git clone https://github.com/metamaden/edirect_docker
 ## Build the image locally
 
 Build a Docker image using `docker build <location>`. This will run an appropriately named file called `Dockerfile` that should be available and readable from the specified 
- `<location>`. In this repo, two `Dockerfile`s have been provided: one using the Biocontainers environment as its base; and one tusing just the minimal dependencies for Entrez Utilities. The former has added convenience if you're running other Biocontainers images, but the latter is smaller and quicker to install.
+ `<location>`. In this repo, two `Dockerfile`s have been provided: one using the Biocontainers environment as its base; and one using just the minimal dependencies for Entrez Utilities. The former has added convenience if you're running other Biocontainers images, but the latter is smaller and quicker to install.
 
 Build the Biocontainers-compatible Docker image from the cloned Dockerfile, setting the `--tag` argument to some informative name:
 ```sh
