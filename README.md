@@ -1,13 +1,15 @@
 # edirect_docker
 
-An updated edirect docker image
+Dockerizations for Entrez Programming Utilities (a.k.a. `edirect`)  
 
 # Description
 
-An updated Entrez Direct Utilities Dockerfile, currently based on BioContainers v1.2.0_cv2 and running edirect v18.6.20221222. The original 
-source for this Dockerfile is from the BioContainers GitHub repo (see Resources, below).
+This repo exists to support dockerizations (e.g. `Dockerfiles`) that allow users to run `edirect`. Currently, you can run `edirect` v18.6.. 
+either using a Biocontainers-compatible image with the file at `./biocontainers/`, or using a more compact minimal image with the file located at `./minimal/`.
 
 # Tutorial:
+
+This section describes how to set up new Docker images with the provided `Dockerfiles`, and how to get started with using `edirect` from the images.
 
 ## Clone the main repo with
 
