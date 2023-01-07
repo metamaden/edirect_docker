@@ -83,13 +83,8 @@ ENV ZIP=edirect-< LATEST_VERSION >.tar.gz
 ENV URL=ftp://ftp.ncbi.nlm.nih.gov/entrez/entrezdirect/versions/< LATEST_VERSION >/
 ```
 
-# Resources
+# Further reading
 
-* **BioContainers** : Consult the [Docker](https://hub.docker.com/r/biocontainers/biocontainers) and [GitHub](https://github.com/BioContainers/containers) pages for information about this project and available images.
+* [**Biocontainers**](https://biocontainers.pro/) : Project for containerizing bioinformatics software. The [Docker](https://hub.docker.com/r/biocontainers/biocontainers) and [GitHub](https://github.com/BioContainers/containers) pages were consulted for this repo.
 
-* **Tertiary databases** : Consult the main tertiary databases for public omics data (e.g. [GEO](https://www.ncbi.nlm.nih.gov/geo/), [SRA](https://www.ncbi.nlm.nih.gov/sra), 
-[Bioconductor](https://bioconductor.org/packages/release/data/experiment/), etc.) for full datasets, metadata, supplemental files, and more.
-
-* [**`geoarraydigest`**](https://github.com/metamaden/geoarraydigest) : A project to compile and publish GEO array metadata by platform. Also contains helpful information about platforms compiled.
-
-* [**`pubomics`**](https://github.com/metamaden/pubomics) : A resource for raising awareness of public omics data.
+* [**Entrez Programming Utilities Help**](https://www.ncbi.nlm.nih.gov/books/NBK25501/) : Web-based book showing how to use all the features in `edirect`.
