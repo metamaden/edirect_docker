@@ -3,7 +3,6 @@ FROM ubuntu:latest
 ENV ZIP=edirect-18.6.20221222.tar.gz
 ENV URL=ftp://ftp.ncbi.nlm.nih.gov/entrez/entrezdirect/versions/18.6.20221222/
 ENV FOLDER=edirect
-ENV INSTALL_FOLDER=/home/biodocker/
 ENV DST=/tmp
 
 RUN apt-get update && \
