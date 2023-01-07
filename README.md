@@ -74,7 +74,7 @@ Either of the above queries should return something like the following:
 ## OpenSSL
 
 I encountered an error involving OpenSSL which was fixed when I updated my base image and `edirect` to their latest versions. Actually, this error inspired this post to make 
-sure others can run a dockerized `edirect` error-free. Note that some existing `Dockerfile`s (e.g. ![here](https://github.com/BioContainers/containers/blob/master/entrez-direct/7.50.20171103/Dockerfile)) use static versions for their base image (e.g. `FROM biocontainers/biocontainers:v1.0.0_cv4`). By changing this to `FROM biocontainers/biocontainers:latest` we can ensure the latest version of the base image is always installed.
+sure others can run a dockerized `edirect` error-free. Note that some existing `Dockerfile`s (e.g. [here](https://github.com/BioContainers/containers/blob/master/entrez-direct/7.50.20171103/Dockerfile)) use static versions for their base image (e.g. `FROM biocontainers/biocontainers:v1.0.0_cv4`). By changing this to `FROM biocontainers/biocontainers:latest` we can ensure the latest version of the base image is always installed.
 
 The latest version of `edirect` can be found at its [FTP address (ftp://ftp.ncbi.nlm.nih.gov/entrez/entrezdirect/versions/)](ftp://ftp.ncbi.nlm.nih.gov/entrez/entrezdirect/versions/). This needs to be updated in the `Dockerfile`, which you can do manually or which can feasibly be scripted as a version check in the `Dockerfile`. The lines in question are:
 
